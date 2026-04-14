@@ -1,0 +1,67 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Build outputs
+dist
+dist-ssr
+*.local
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Cache directories
+.cache
+.parcel-cache
+.next
+.nuxt
+.vite
+
+# TypeScript
+*.tsbuildinfo
+
+# IDE and editor files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Coverage directory used by tools like istanbul
+coverage
+*.lcov
+
+# Testing
+cypress/videos/
+cypress/screenshots/
+
+# Optional: if using npm/yarn/pnpm workspace
+.npm
+.pnpm-debug.log
+
+# Optional: if using Prettier
+.prettierignore
+
+# Optional: if using ESLint
+.eslintcache
+
+# Optional: if using Stylelint
+.stylelintcache
