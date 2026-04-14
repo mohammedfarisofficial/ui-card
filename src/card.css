@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #3d3d3d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+}
+
+/* ── Scene wrapper ── */
+.scene {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 40px 20px;
+}
+
+/* ── Card shell ── */
+.card {
+  width: 340px;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.55),
+    0 8px 24px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Top white header ── */
+.card-header {
+  background: #ffffff;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 18px 18px 14px 18px;
+  gap: 12px;
+}
+
+.card-header-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-top: 2px;
+}
+
+.card-name {
+  font-size: 20px;
+  font-weight: 800;
+  color: #111111;
+  letter-spacing: -0.3px;
+  line-height: 1.1;
+}
+
+.card-url {
+  font-size: 10.5px;
+  color: #555;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.card-url-accent {
+  color: #e02020;
+  font-weight: 500;
+}
+
+.card-avatar {
+  width: 68px;
+  height: 68px;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 1.5px solid #e5e5e5;
+}
+
+.card-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── Red CREATOR banner ── */
+.card-banner {
+  background: #e01414;
+  padding: 10px 18px;
+  display: flex;
+  align-items: center;
+}
+
+.card-banner-text {
+  font-size: 58px;
+  font-weight: 900;
+  color: #ffffff;
+  letter-spacing: -1px;
+  line-height: 1;
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+}
+
+/* ── Art section ── */
+.card-art {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 340 / 420;
+  background: #3a4fc1;
+  overflow: hidden;
+}
+
+.card-art svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ── upreels.in badge ── */
+.card-badge {
+  position: absolute;
+  bottom: 18px;
+  left: 16px;
+  background: #e01414;
+  border-radius: 6px;
+  padding: 5px 12px;
+  z-index: 10;
+}
+
+.card-badge span {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+  font-family: 'Inter', sans-serif;
+}
